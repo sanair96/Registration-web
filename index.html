@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Registration</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 align="center">Participant Login</h2>
+
+    <div class="container">
+
+        <form class="for">
+            <div class="row">
+                <div class="input-field col offset-m4 offset-l3 s12 m6 l6">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email_field" type="email" class="validate">
+                    <label for="email" data-error="wrong" data-success="right">Email</label>
+                </div>
+                <div class="input-field pass col offset-m4 offset-l3 s12 m6 l6 ">
+                    <i class="material-icons prefix">border_color</i>
+                    <!--input id="password_field" type="password" class="validate" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required!-->
+                    <input id="password_field" type="password" class="validate">
+                    <label for="icon_prefix">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <button class="waves-effect waves-light btn col offset-m4 offset-l3 s12 m3 l3" onclick="login();" type="button" id="button">LogIn</button>
+                <div class="col 11"></div>
+                <button class="waves-effect waves-light btn col s12 m3 l3" onclick="create();" type="button" id="button1">Register</button>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+     <script src="js/index.js"></script>
+</body>
+
+</html>

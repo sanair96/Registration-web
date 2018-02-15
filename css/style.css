@@ -1,0 +1,76 @@
+nav{
+  background-color: #021B38 !important;
+}
+.container
+{
+	
+  /*  width:900px;
+	height: 1500px;*/
+  margin:auto;
+	background-color: white;
+}
+.for{
+  margin:auto !important;
+
+}
+.pass{
+  display: block;
+}
+
+h2{
+	color: #00838f ;
+	font-family:  'Open Sans', sans-serif;
+	font-weight: 600;
+}
+#button,#button1
+{
+	
+	font-family: 'Roboto', sans-serif;
+  display: block !important;
+}
+.radio{
+  pointer-events: auto !important;
+}
+
+
+  /* icon prefix focus color */
+   .input-field .prefix.active {
+     color:#00bfa5 ;
+   }
+   /* label color */
+   .input-field label {
+     color:#bdbdbd ;
+     font-family: 'Roboto', sans-serif;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+.card{
+  box-shadow: 5px 10px 8px #888888;
+  cursor: pointer;
+  transition: transform .2s;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.card-content p
+{
+  text-align: center;
+  padding: 20% !important;
+}

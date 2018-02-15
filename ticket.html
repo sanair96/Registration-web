@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Register</a>
+      <ul id="nav-mobile" class="right">
+        <li><a href="#" onclick="logout();">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+    <h2 align="center">Your Ticket</h2>
+    <h4 align="center">We will contact you soon with an email</h4>
+        <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <h4 align="center">Key in your registered email to generate the ticket</h4>
+        <div class="input-field col s12 offset-l3 offset-m3 l6 m6">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div><br>
+  <button class="btn waves-effect waves-light" onclick="generate();" type="button" name="action">Generate
+  </button>
+      </div>
+    </form>
+  </div>
+                 
+        <div class="container">
+            <div class="row">
+                <div class="box" style="border: 1px solid black;">
+                    <div class="name"></div>
+                    <div class="email"></div>
+                    <div class="phone"></div>
+                    <div class="tid"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/form.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>

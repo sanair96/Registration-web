@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/view.css">
+
+    <title>Registration Database</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+  <a class="navbar-brand">Registration</a>
+  <form class="form-inline">
+    <button class="btn mainbut btn-outline-success my-2 my-sm-0" onclick="logout();" type="button">Logout</button>
+  </form>
+</nav>
+  <div class="container">
+    <div align="center">
+    <h2 class="title">Registration Database</h2>
+  </div>
+  
+  <div class="row">
+<div class="col-md-6 col-lg-6 col-sm-12" align="center">
+  <select class="drop" id="filter">
+    <option value="" disabled selected>Filter By</option>
+    <option>Email</option>
+    <option>Name</option>
+    <option>Ticket ID</option>
+    <option>Phone</option>
+    <option>MOP</option>
+  </select>
+</div>
+
+<div class="col-md-4  col-lg-4 col-sm-12">
+<div class="searchbox">
+<form class="example">
+  <input type="text" placeholder="Search.." id="searchbox">
+  <button type="button" onclick="search();"><i class="fa fa-search"></i></button>
+</form>
+</div>
+</div>
+</div>
+<!-- <button type="button" onclick="create();">Create</button> -->
+<!-- <div align="center">
+<button type="button" onclick="view();" class="btn btn-outline-primary">View All</button>
+</div> -->
+
+<table class="table" id="list">
+  <thead>
+    <tr>
+      <th scope="col">TID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Phone</th>
+      <th scope="col">MOP</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/view.js"></script>
+  </body>
+</html>

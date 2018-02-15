@@ -1,0 +1,81 @@
+.drop
+{
+	margin-top: 5%;
+	width: 50%;
+}
+.title{
+	color: #00838f ;
+	font-family:  'Open Sans', sans-serif;
+	font-weight: 600;
+}
+select {
+  font-size: 1.3em;
+   font-family: sans-serif;
+}
+.navbar-brand
+{
+  color:#fff !important;
+}
+.mainbut
+{
+  margin-top:0 !important;
+  width:auto !important;
+  float: right !important;
+}
+.btn
+{
+	margin-top: 5%;
+	width: 20%;
+}
+.table
+{
+	margin-top: 5%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  text-align: center;
+   width: 80%;
+  background: #f1f1f1;
+}
+/* Style the submit button */
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.searchbox
+{
+	margin-top: 5%;
+}
+#clist
+{
+	display: none;
+}
+#vlist
+{
+	display: none;
+}

@@ -53,16 +53,16 @@
             var db='/users/';
             var gen = document.getElementById("gender");
             var mod = document.getElementById("mod");
-            var strgen = gen.options[gen.selectedIndex].text;
-            var strmod = mod.options[mod.selectedIndex].text;
+            var strgen = gen.options[gen.selectedIndex].text.toUpperCase();
+            var strmod = mod.options[mod.selectedIndex].text.toUpperCase();
 
             var name = document.getElementById('fname').value.toUpperCase();
-            var email = document.getElementById('email').value;
+            var email = document.getElementById('email').value.toUpperCase();
             var phone = document.getElementById('mob').value;
             id=id+1;
-            var tid=id;
+            var tid="T"+id;
             var data = {
-                tid:id,
+                tid:tid,
                 name:name,
                 email:email,
                 phone:phone,
@@ -88,7 +88,7 @@ function logout(){
 }
 function generate()
 {
-  var email = document.getElementById('email').value;
+  var email = document.getElementById('email').value.toUpperCase();
   var databaseRef = firebase.database().ref('users/');
   var db='/users/';
   databaseRef.once('value', function(snapshot) {

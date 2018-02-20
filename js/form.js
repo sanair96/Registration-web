@@ -53,8 +53,10 @@ function save_user () {
     var db = '/users/'
     var gen = document.getElementById('gender')
     var mod = document.getElementById('mod')
+    var shirt = document.getElementById('shirt')
     var strgen = gen.options[gen.selectedIndex].text.toUpperCase()
     var strmod = mod.options[mod.selectedIndex].text.toUpperCase()
+    var strshirt = shirt.options[shirt.selectedIndex].text.toUpperCase()
 
     var name = document.getElementById('fname').value.toUpperCase()
     var email = document.getElementById('email').value.toUpperCase()
@@ -67,6 +69,7 @@ function save_user () {
       email: email,
       phone: phone,
       gender: strgen,
+      shirt: strshirt,
       mop: strmod
     }
 
@@ -99,6 +102,7 @@ function generate () {
         $('.email').html('<p>Email:' + childData.email + '</p>')
         $('.phone').html('<p>Phone:' + childData.phone + '</p>')
         $('.tid').html('<p>Ticket Number:' + childData.tid + '</p>')
+        $('.shirt').html('<p>Shirt:' + childData.shirt + '</p>')
       }
     })
   })

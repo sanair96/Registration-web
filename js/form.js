@@ -57,10 +57,11 @@ function save_user () {
     var gen = document.getElementById('gender')
     var mod = document.getElementById('mod')
     var shirt = document.getElementById('shirt')
+    var size = document.getElementById('ssize')
     var strgen = gen.options[gen.selectedIndex].text.toUpperCase()
     var strmod = mod.options[mod.selectedIndex].text.toUpperCase()
     var strshirt = shirt.options[shirt.selectedIndex].text.toUpperCase()
-
+    var strssize = size.options[size.selectedIndex].text.toUpperCase()
     var name = document.getElementById('fname').value.toUpperCase()
     var email = document.getElementById('email').value.toUpperCase()
     var phone = document.getElementById('mob').value
@@ -73,6 +74,7 @@ function save_user () {
       phone: phone,
       gender: strgen,
       shirt: strshirt,
+      ssize:strssize,
       mop: strmod,
       registered:uemail
     }
@@ -104,9 +106,12 @@ function generate () {
       if (email == childData.email) {
         $('.name').html('<p>Name:' + childData.name + '</p>')
         $('.email').html('<p>Email:' + childData.email + '</p>')
+        $('.gender').html('<p>Gender:' + childData.gender + '</p>')
         $('.phone').html('<p>Phone:' + childData.phone + '</p>')
         $('.tid').html('<p>Ticket Number:' + childData.tid + '</p>')
         $('.shirt').html('<p>Shirt:' + childData.shirt + '</p>')
+        $('.ssize').html('<p>Shirt Size:' + childData.ssize + '</p>')
+        $('.Regby').html('<p>Registered By:' + childData.registered + '</p>')
       }
     })
   })

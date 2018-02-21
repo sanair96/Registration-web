@@ -51,6 +51,9 @@ function save_user () {
   }).then(function () {
     var databaseRef = firebase.database().ref('users/')
     var db = '/users/'
+    var user = firebase.auth().currentUser;
+    var uemail = user.email;
+    //alert(uemail);
     var gen = document.getElementById('gender')
     var mod = document.getElementById('mod')
     var shirt = document.getElementById('shirt')
@@ -70,7 +73,8 @@ function save_user () {
       phone: phone,
       gender: strgen,
       shirt: strshirt,
-      mop: strmod
+      mop: strmod,
+      registered:uemail
     }
 
     var updates = {}

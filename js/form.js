@@ -65,6 +65,7 @@ function save_user () {
     var name = document.getElementById('fname').value.toUpperCase()
     var email = document.getElementById('email').value.toUpperCase()
     var phone = document.getElementById('mob').value
+    var tn = document.getElementById('tn').value
     id = id + 1
     var tid = 'T' + id
     var data = {
@@ -76,6 +77,7 @@ function save_user () {
       shirt: strshirt,
       ssize:strssize,
       mop: strmod,
+      transaction_num:tn,
       registered:uemail
     }
 

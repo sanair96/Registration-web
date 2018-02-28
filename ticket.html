@@ -9,6 +9,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/ticket.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,7 +40,7 @@
     </form>
   </div>
                  
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="box" style="border: 1px solid black;">
                     <div class="name"></div>
@@ -53,6 +54,22 @@
                     <div class="Regby"></div>
                 </div>
             </div>
+        </div> -->
+        <div class="container">
+          <div class="row">
+            <center id="tkt">
+              <span id="number" class="common">12345</span>
+              <img src="tb.jpg">
+              <div class=".common" id="price">
+              <span class="amount">INR 200</span>
+              <span class="notimp">Marathon Registration TCC</span>
+              <span class="notimp move optTee" style="font-size: 1.1em">+</span>
+              <span class="amount optTee">INR 100</span>
+              <span class="notimp optTee">Tickets + Official Tee</span>
+              <span class="amount" id="optThree">INR 300</span>
+              </div>
+              </center>
+          </div>
         </div>
         <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
         <!--Import jQuery before materialize.js-->

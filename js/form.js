@@ -106,14 +106,27 @@ function generate () {
       var childKey = childSnapshot.key
       var childData = childSnapshot.val() // gets all the child data
       if (email == childData.email) {
-        $('.name').html('<p>Name:' + childData.name + '</p>')
-        $('.email').html('<p>Email:' + childData.email + '</p>')
-        $('.gender').html('<p>Gender:' + childData.gender + '</p>')
-        $('.phone').html('<p>Phone:' + childData.phone + '</p>')
-        $('.tid').html('<p>Ticket Number:' + childData.tid + '</p>')
-        $('.shirt').html('<p>Shirt:' + childData.shirt + '</p>')
-        $('.ssize').html('<p>Shirt Size:' + childData.ssize + '</p>')
-        $('.Regby').html('<p>Registered By:' + childData.registered + '</p>')
+        var Data=childData.shirt;
+        if(Data.match("YES"))
+        {
+        // $('.name').html('<p>Name:' + childData.name + '</p>')
+        // $('.email').html('<p>Email:' + childData.email + '</p>')
+        // $('.gender').html('<p>Gender:' + childData.gender + '</p>')
+        // $('.phone').html('<p>Phone:' + childData.phone + '</p>')
+        // $('.tid').html('<p>Ticket Number:' + childData.tid + '</p>')
+        // $('.shirt').html('<p>Shirt:' + childData.shirt + '</p>')
+        // $('.ssize').html('<p>Shirt Size:' + childData.ssize + '</p>')
+        // $('.Regby').html('<p>Registered By:' + childData.registered + '</p>')
+        $('#tkt').css("display","block");
+        document.getElementById("number").innerHTML=""+childData.tid+"";
+        alert("yes");
+        }
+        else if(Data.match("NO"))
+        {
+          $('#tkt').css("display","block");
+          document.getElementById("number").innerHTML=""+childData.tid+"";
+          alert("no")
+        }
       }
     })
   })

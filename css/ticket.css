@@ -1,0 +1,53 @@
+body,html,p{
+    padding:0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  center{
+    position: relative;
+  }
+  body{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #tkt
+  {
+      display: none;
+  }
+  .common{
+  position: absolute;
+  }
+  .amount{
+    color: yellow;
+    font-size: 3.5vh;   
+  }
+  .notimp{
+    font-size: 1.8vh;
+  }
+  #price{
+    position: absolute;
+    top:55%;
+    right: 2.5%;
+    filter: blur(.4px);
+    display:flex;
+    text-align: right;
+    color: white;
+    flex-direction: column;
+  }
+  #number{
+    font-weight: 700;
+    top:4%;
+    
+    font-size: 3vh;
+  }
+  img{
+    height: 100vh;
+  }
+  
+  .optTee, #optThree, #optTwo {
+    display: none;
+  }
+  
